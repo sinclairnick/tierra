@@ -6,8 +6,12 @@
   "scripts": {
     "test": "jest *.test.ts --runInBand"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sinclairnick/tierra.git"
+  },
+  "author": "sinclairnick",
+  "license": "MIT",
   "types": "dist/index.d.ts",
   "dependencies": {
     "shortid": "^2.2.15"
