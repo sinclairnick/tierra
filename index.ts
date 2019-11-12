@@ -10,6 +10,8 @@ export const Tierra = (seed?: number): TierraObject => {
   const errorTable: { [key: string]: string } = {};
   return {
     get: (error: Error) => {
+      if (!(error instanceof Error))
+        throw new TypeError("get() must be supplied an Error instance");
       const eString = error.toString();
       if (!errorTable[eString]) errorTable[eString] = shortid.generate();
       return errorTable[eString];
