@@ -1,7 +1,7 @@
 {
   "name": "tierra",
   "version": "1.0.0",
-  "description": "automatically generate client-friendly error codes",
+  "description": "automatically create client-friendly aliases for errors",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest *.test.ts --runInBand"
