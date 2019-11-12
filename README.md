@@ -8,6 +8,10 @@
 
 ## Setup
 
+```
+npm i --save tierra
+```
+
 ```javascript
 // ES5
 const Tierra = require("tierra").default;
