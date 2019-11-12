@@ -1,0 +1,23 @@
+{
+  "name": "tierra",
+  "version": "1.0.0",
+  "description": "automatically generate client-friendly error codes",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest *.test.ts --runInBand"
+  },
+  "author": "",
+  "license": "ISC",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "shortid": "^2.2.15"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.22",
+    "@types/node": "^12.12.7",
+    "@types/shortid": "0.0.29",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.7.2"
+  }
+}
