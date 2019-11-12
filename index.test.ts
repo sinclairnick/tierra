@@ -1,6 +1,5 @@
 import shortid from "shortid";
 import Tierra from "./index";
-import { exportAllDeclaration } from "@babel/types";
 
 describe("tierra", () => {
   test("returns shortid code", () => {
