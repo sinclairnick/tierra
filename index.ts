@@ -1,6 +1,11 @@
 import shortid from "shortid";
 
-export const Tierra = (seed?: number) => {
+interface TierraObject {
+  get: (error: Error) => string;
+  table: () => { [key: string]: string };
+}
+
+export const Tierra = (seed?: number): TierraObject => {
   shortid.seed(seed || 1);
   const errorTable: { [key: string]: string } = {};
   return {
@@ -15,7 +20,7 @@ export const Tierra = (seed?: number) => {
         key => (reversedTable[errorTable[key]] = key)
       );
       return reversedTable;
-    },
+    }
   };
 };
 export default Tierra;
