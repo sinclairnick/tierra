@@ -12,6 +12,8 @@
 npm i --save tierra
 ```
 
+It is recommended to create a singleton object to keep errors consistent and centralized across the codebase.
+
 ```javascript
 // ES5
 const Tierra = require("tierra").default;
